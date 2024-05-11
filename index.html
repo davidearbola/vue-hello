@@ -12,9 +12,20 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <div id="app">
-        <h1>{{ titolo }}</h1>
-        <p>{{ sottotitolo }}</p>
-        <img :src="img" alt="">
+        <div class="container">
+            <div class="mb">
+                <img :src="img" alt="">
+            </div>
+            <div class="d-flex just-around mb">
+                <label for="nome">Il tuo nome</label>
+                <input type="text" id="nome" v-model="firstName">
+                <label for="cognome">Il tuo cognome</label>
+                <input type="text" id="cognome" v-model="lastName">
+            </div>
+            <h1 class="mb">{{ titolo }} <span :class="classe">{{firstName}}</span> <span
+                    :class="classe">{{lastName}}</span> {{sottotitolo}}</h1>
+            <button @click="cambiaColore()">Cambia il colore al nome</button>
+        </div>
     </div>
 
     <script src="./js/main.js"></script>

@@ -3,6 +3,42 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	width: 800px;
+	text-align: center;
+	padding: 1rem;
+	border: 2px solid green;
+}
+
+img {
+	width: 250px;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.just-around {
+	justify-content: space-around;
+}
+
+.mb {
+	margin-bottom: 1rem;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
 }
