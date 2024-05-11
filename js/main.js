@@ -1,11 +1,10 @@
 const { createApp } = Vue;
 
-const configurazione = {
+createApp({
 	data() {
 		return {
-			message: "Welcome to VueJS!",
+			titolo: "Benvenuto nel mondo di VueJS!",
+			sottotitolo: "Ora sei pronto a diventare pazzo veramente",
 		};
 	},
-};
-
-app.mount("#app");
+}).mount("#app");
